@@ -1,0 +1,23 @@
+function searchSong(){
+
+    const input=document.getElementById("searchBox").value.toLowerCase();
+
+    const songs=document.querySelectorAll(".song");
+
+    songs.forEach(song=>{
+
+        const name=song.dataset.name.toLowerCase();
+
+        if(name.indexOf(input)>-1){
+
+            song.style.display="block";
+
+        }else{
+
+            song.style.display="none";
+
+        }
+
+    });
+
+}
