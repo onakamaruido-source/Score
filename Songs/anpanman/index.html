@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>アンパンマンマーチ | 吹奏楽部 音源・楽譜共有サイト</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Yu Gothic UI","Yu Gothic","Meiryo",sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    color:#333;
+}
+
+header{
+    background:#1976d2;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+header h1{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+header a{
+    color:white;
+    text-decoration:none;
+}
+
+main{
+    width:95%;
+    max-width:900px;
+    margin:30px auto;
+}
+
+.part{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.15);
+
+}
+
+.part h2{
+
+    color:#1976d2;
+
+    margin-bottom:15px;
+
+}
+
+.button{
+
+    display:inline-block;
+
+    padding:12px 22px;
+
+    margin:8px 8px 8px 0;
+
+    background:#1976d2;
+
+    color:white;
+
+    text-decoration:none;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.button:hover{
+
+    background:#0d5ab9;
+
+}
+
+.status{
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+}
+
+audio{
+
+    display:none;
+
+}
+
+@media(max-width:700px){
+
+header h1{
+
+font-size:28px;
+
+}
+
+.button{
+
+display:block;
+
+width:100%;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🎼 アンパンマーチ</h1>
+
+<p>パート別 楽譜・音源</p>
+
+<br>
+
+<a href="../../index.html">← 曲一覧へ戻る</a>
+
+</header>
+
+<main>
+
+<!-- ======================= -->
+<!-- Full -->
+<!-- ======================= -->
+
+<div class="part">
+
+<h2>🎵 Full</h2>
+
+<a
+class="button"
+href="score/Fullscore.pdf"
+target="_blank">
+
+📄 楽譜を見る
+
+</a>
+
+<button
+class="button"
+onclick="playAudio('fullscore','status_fullscore')">
+
+▶ 音源を聞く
+
+</button>
+
+<button
+class="button"
+onclick="pauseAudio('fullscore','status_fullscore')">
+
+⏸ 一時停止
+
+</button>
+
+<p
+class="status"
+id="status_fullscore">
+
+停止中
+
+</p>
+
+<audio id="fullscore">
+
+<source
+src="audio/Fullscore.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<!-- ======================= -->
+<!-- Flute -->
+<!-- ======================= -->
+
+<div class="part">
+
+<h2>🎵 Flute</h2>
+
+<a
+class="button"
+href="score/Flute.pdf"
+target="_blank">
+
+📄 楽譜を見る
+
+</a>
+
+<button
+class="button"
+onclick="playAudio('flute','status_flute')">
+
+▶ 音源を聞く
+
+</button>
+
+<button
+class="button"
+onclick="pauseAudio('flute','status_flute')">
+
+⏸ 一時停止
+
+</button>
+
+<p
+class="status"
+id="status_flute">
+
+停止中
+
+</p>
+
+<audio id="flute">
+
+<source
+src="audio/Flute.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<!-- ======================= -->
+<!-- Clarinet -->
+<!-- ======================= -->
+
+<div class="part">
+
+<h2>🎵 Clarinet</h2>
+
+<a
+class="button"
+href="score/Clarinet.pdf"
+target="_blank">
+
+📄 楽譜を見る
+
+</a>
+
+<button
+class="button"
+onclick="playAudio('clarinet','status_clarinet')">
+
+▶ 音源を聞く
+
+</button>
+
+<button
+class="button"
+onclick="pauseAudio('clarinet','status_clarinet')">
+
+⏸ 一時停止
+
+</button>
+
+<p
+class="status"
+id="status_clarinet">
+
+停止中
+
+</p>
+
+<audio id="clarinet">
+
+<source
+src="audio/Clarinet.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<!-- ======================= -->
+<!-- Alto Sax -->
+<!-- ======================= -->
+
+<div class="part">
+
+<h2>🎷 Alto Sax</h2>
+
+<a
+class="button"
+href="score/AltoSax.pdf"
+target="_blank">
+
+📄 楽譜を見る
+
+</a>
+
+<button
+class="button"
+onclick="playAudio('altosax','status_altosax')">
+
+▶ 音源を聞く
+
+</button>
+
+<button
+class="button"
+onclick="pauseAudio('altosax','status_altosax')">
+
+⏸ 一時停止
+
+</button>
+
+<p
+class="status"
+id="status_altosax">
+
+停止中
+
+</p>
+
+<audio id="altosax">
+
+<source
+src="audio/AltoSax.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<!-- ======================= -->
+<!-- Baritone Sax -->
+<!-- ======================= -->
+
+<div class="part">
+
+<h2>🎷 Baritone Sax</h2>
+
+<a
+class="button"
+href="score/BaritoneSax.pdf"
+target="_blank">
+
+📄 楽譜を見る
+
+</a>
+
+<button
+class="button"
+onclick="playAudio('baritonesax','status_baritonesax')">
+
+▶ 音源を聞く
+
+</button>
+
+<button
+class="button"
+onclick="pauseAudio('baritonesax','status_baritonesax')">
+
+⏸ 一時停止
+
+</button>
+
+<p
+class="status"
+id="status_baritonesax">
+
+停止中
+
+</p>
+
+<audio id="baritonesax">
+
+<source
+src="audio/BaritoneSax.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<!-- ======================= -->
+<!-- Trumpet -->
+<!-- ======================= -->
+
+<div class="part">
+
+<h2>🎺 Trumpet</h2>
+
+<a
+class="button"
+href="score/Trumpet.pdf"
+target="_blank">
+
+📄 楽譜を見る
+
+</a>
+
+<button
+class="button"
+onclick="playAudio('trumpet','status_trumpet')">
+
+▶ 音源を聞く
+
+</button>
+
+<button
+class="button"
+onclick="pauseAudio('trumpet','status_trumpet')">
+
+⏸ 一時停止
+
+</button>
+
+<p
+class="status"
+id="status_trumpet">
+
+停止中
+
+</p>
+
+<audio id="trumpet">
+
+<source
+src="audio/Trumpet.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<!-- ======================= -->
+<!-- Horn -->
+<!-- ======================= -->
+
+<div class="part">
+
+<h2>🎺 Horn</h2>
+
+<a
+class="button"
+href="score/Horn.pdf"
+target="_blank">
+
+📄 楽譜を見る
+
+</a>
+
+<button
+class="button"
+onclick="playAudio('horn','status_horn')">
+
+▶ 音源を聞く
+
+</button>
+
+<button
+class="button"
+onclick="pauseAudio('horn','status_horn')">
+
+⏸ 一時停止
+
+</button>
+
+<p
+class="status"
+id="status_horn">
+
+停止中
+
+</p>
+
+<audio id="horn">
+
+<source
+src="audio/Horn.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<!-- ======================= -->
+<!-- Trombone -->
+<!-- ======================= -->
+
+<div class="part">
+
+<h2>🎺 Trombone</h2>
+
+<a
+class="button"
+href="score/Trombone.pdf"
+target="_blank">
+
+📄 楽譜を見る
+
+</a>
+
+<button
+class="button"
+onclick="playAudio('trombone','status_trombone')">
+
+▶ 音源を聞く
+
+</button>
+
+<button
+class="button"
+onclick="pauseAudio('trombone','status_trombone')">
+
+⏸ 一時停止
+
+</button>
+
+<p
+class="status"
+id="status_trombone">
+
+停止中
+
+</p>
+
+<audio id="trombone">
+
+<source
+src="audio/Trombone.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<!-- ======================= -->
+<!-- Tuba -->
+<!-- ======================= -->
+
+<div class="part">
+
+<h2>🎵 Tuba</h2>
+
+<a
+class="button"
+href="score/Tuba.pdf"
+target="_blank">
+
+📄 楽譜を見る
+
+</a>
+
+<button
+class="button"
+onclick="playAudio('tuba','status_tuba')">
+
+▶ 音源を聞く
+
+</button>
+
+<button
+class="button"
+onclick="pauseAudio('tuba','status_tuba')">
+
+⏸ 一時停止
+
+</button>
+
+<p
+class="status"
+id="status_tuba">
+
+停止中
+
+</p>
+
+<audio id="tuba">
+
+<source
+src="audio/Tuba.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<!-- ======================= -->
+<!-- Drum -->
+<!-- ======================= -->
+
+<div class="part">
+
+<h2>🥁 Drum</h2>
+
+<a
+class="button"
+href="score/Drum.pdf"
+target="_blank">
+
+📄 楽譜を見る
+
+</a>
+
+<button
+class="button"
+onclick="playAudio('drum','status_drum')">
+
+▶ 音源を聞く
+
+</button>
+
+<button
+class="button"
+onclick="pauseAudio('drum','status_drum')">
+
+⏸ 一時停止
+
+</button>
+
+<p
+class="status"
+id="status_drum">
+
+停止中
+
+</p>
+
+<audio id="drum">
+
+<source
+src="audio/Drum.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+<!-- ======================= -->
+<!-- Percussion -->
+<!-- ======================= -->
+
+<div class="part">
+
+<h2>🥁 Percussion</h2>
+
+<a
+class="button"
+href="score/Percussion.pdf"
+target="_blank">
+
+📄 楽譜を見る
+
+</a>
+
+<button
+class="button"
+onclick="playAudio('percussion','status_percussion')">
+
+▶ 音源を聞く
+
+</button>
+
+<button
+class="button"
+onclick="pauseAudio('percussion','status_percussion')">
+
+⏸ 一時停止
+
+</button>
+
+<p
+class="status"
+id="status_percussion">
+
+停止中
+
+</p>
+
+<audio id="percussion">
+
+<source
+src="audio/Percussion.mp3"
+type="audio/mpeg">
+
+</audio>
+
+</div>
+
+</main>
+
+<script>
+
+function playAudio(audioId,statusId){
+
+    const audio=document.getElementById(audioId);
+    const status=document.getElementById(statusId);
+
+    if(!audio)return;
+
+    audio.play();
+    status.textContent="▶ 再生中";
+
+}
+
+function pauseAudio(audioId,statusId){
+
+    const audio=document.getElementById(audioId);
+    const status=document.getElementById(statusId);
+
+    if(!audio)return;
+
+    audio.pause();
+    status.textContent="⏸ 一時停止";
+
+}
+
+document.querySelectorAll("audio").forEach(audio=>{
+
+    audio.addEventListener("ended",()=>{
+
+        const status=document.getElementById("status_"+audio.id);
+
+        if(status){
+            status.textContent="✔ 再生終了";
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
